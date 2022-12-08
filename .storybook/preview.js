@@ -5,11 +5,7 @@ import { withConsole } from "@storybook/addon-console";
 // Install twind
 import { install, defineConfig } from "@twind/core";
 import presetTailwind from "@twind/preset-tailwind";
-install(
-  defineConfig({
-    presets: [presetTailwind()]
-  })
-);
+install(defineConfig({ presets: [presetTailwind()] }));
 
 // This should override the warning but it didn't.
 // Instead, it shows as two different warnings:
