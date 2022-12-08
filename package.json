@@ -1,0 +1,31 @@
+{
+  "name": "csb-storybook-twind-invalid-class-warning",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "",
+  "engines": {
+    "node": ">=14.15.0",
+    "pnpm": "^7.0.0"
+  },
+  "scripts": {
+    "start": "start-storybook -p 6006"
+  },
+  "dependencies": {
+    "@twind/core": "1.0.1",
+    "@twind/preset-tailwind": "1.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "storybook": "6.5.10"
+  },
+  "devDependencies": {
+    "typescript": "4.2.3",
+    "@storybook/addon-console": "1.2.3",
+    "@storybook/addon-actions": "6.5.10",
+    "@storybook/builder-webpack5": "6.5.10",
+    "@storybook/manager-webpack5": "6.5.10",
+    "@storybook/react": "6.5.10",
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6"
+  },
+  "keywords": []
+}
