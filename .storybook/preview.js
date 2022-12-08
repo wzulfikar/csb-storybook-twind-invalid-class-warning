@@ -9,9 +9,8 @@ window.addEventListener("warning", (event) => {
 
   const warning = event.detail;
 
-  // { message: '...', code: 'TWIND_INVALID_CLASS', detail: '<className>'}
-  // { message: '...', code: 'TWIND_INVALID_CSS', detail: '<css>'}
-  console.warn("actual warning:", warning);
+  // Uncomment to show the actual warning
+  // console.warn("actual warning:", warning);
 });
 
 // Install twind
