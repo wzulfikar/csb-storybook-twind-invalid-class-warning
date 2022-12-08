@@ -1,12 +1,15 @@
 lockfileVersion: 5.4
 
+overrides:
+  '@twind/core': link:./twind/packages/core/dist
+
 specifiers:
   '@storybook/addon-actions': 6.5.10
   '@storybook/addon-console': 1.2.3
   '@storybook/builder-webpack5': 6.5.10
   '@storybook/manager-webpack5': 6.5.10
   '@storybook/react': 6.5.10
-  '@twind/core': 1.0.1
+  '@twind/core': link:twind/packages/core/dist
   '@twind/preset-tailwind': 1.0.1
   '@types/react': 18.0.15
   '@types/react-dom': 18.0.6
@@ -16,8 +19,8 @@ specifiers:
   typescript: 4.2.3
 
 dependencies:
-  '@twind/core': 1.0.1_typescript@4.2.3
-  '@twind/preset-tailwind': 1.0.1_7utsmr3hp4lwq43zwfvfuo4jqa
+  '@twind/core': link:twind/packages/core/dist
+  '@twind/preset-tailwind': 1.0.1_ionqvf2bupysgtia4lcymflekq
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   storybook: 6.5.10_tsb4kryhhd2a5r5izkkmtsjwle
@@ -2715,21 +2718,7 @@ packages:
       defer-to-connect: 1.1.3
     dev: false
 
-  /@twind/core/1.0.1_typescript@4.2.3:
-    resolution: {integrity: sha512-cSiDmTqSZ3HYqhbUhb9r//EiYvdfzteU9qbIPeBCIUkNg3ZUol4vOYNxBH5ymmderF4pvQ+Btf6d+flpVm0U9g==}
-    engines: {node: '>=14.15.0'}
-    peerDependencies:
-      typescript: ^4.8.4
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@swc/helpers': 0.4.14
-      csstype: 3.1.1
-      typescript: 4.2.3
-    dev: false
-
-  /@twind/preset-tailwind/1.0.1_7utsmr3hp4lwq43zwfvfuo4jqa:
+  /@twind/preset-tailwind/1.0.1_ionqvf2bupysgtia4lcymflekq:
     resolution: {integrity: sha512-anUOpxjvKFvxi4jP3u0HgP1+GtnqMFR7bZOUUc8+M099zIyLaRtBWw/8CCn+QN1WY/eZ01e7ru8GlYPUpJEQxA==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
@@ -2740,7 +2729,7 @@ packages:
         optional: true
     dependencies:
       '@swc/helpers': 0.4.14
-      '@twind/core': 1.0.1_typescript@4.2.3
+      '@twind/core': link:twind/packages/core/dist
       typescript: 4.2.3
     dev: false
 
@@ -4474,6 +4463,7 @@ packages:
 
   /csstype/3.1.1:
     resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
+    dev: true
 
   /currently-unhandled/0.4.1:
     resolution: {integrity: sha512-/fITjgjGU50vjQ4FH6eUoYu+iUoUKIXws2hL15JJpIR+BbTxaXQsMuuyjtNh2WqsSBS5nsaZHFsFecyw5CCAng==}
