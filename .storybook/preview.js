@@ -16,7 +16,7 @@ window.addEventListener("warning", (event) => {
 
   // { message: '...', code: 'TWIND_INVALID_CLASS', detail: '<className>'}
   // { message: '...', code: 'TWIND_INVALID_CSS', detail: '<css>'}
-  console.warn("actual warning:", warning);
+  console.warn("twind warning:", warning);
 });
 
 // Install twind
