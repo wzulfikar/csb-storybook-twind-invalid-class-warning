@@ -9,8 +9,7 @@ window.addEventListener("warning", (event) => {
 
   const warning = event.detail;
 
-  // Uncomment to show the actual warning
-  // console.warn("actual warning:", warning);
+  console.warn("twind warning:", warning);
 });
 
 // Install twind
