@@ -2,11 +2,6 @@ import "@storybook/addon-actions/register";
 import { addDecorator } from "@storybook/react";
 import { withConsole } from "@storybook/addon-console";
 
-// Install twind
-import { install, defineConfig } from "@twind/core";
-import presetTailwind from "@twind/preset-tailwind";
-install(defineConfig({ presets: [presetTailwind()] }));
-
 // This should override the warning but it didn't.
 // Instead, it shows as two different warnings:
 // ```
@@ -23,5 +18,10 @@ window.addEventListener("warning", (event) => {
   // { message: '...', code: 'TWIND_INVALID_CSS', detail: '<css>'}
   console.warn("actual warning:", warning);
 });
+
+// Install twind
+import { install, defineConfig } from "@twind/core";
+import presetTailwind from "@twind/preset-tailwind";
+install(defineConfig({ presets: [presetTailwind()] }));
 
 addDecorator((storyFn, context) => withConsole()(storyFn)(context));
