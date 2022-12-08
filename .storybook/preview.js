@@ -7,12 +7,7 @@ import { install, defineConfig } from "@twind/core";
 import presetTailwind from "@twind/preset-tailwind";
 install(defineConfig({ presets: [presetTailwind()] }));
 
-// This should override the warning but it didn't.
-// Instead, it shows as two different warnings:
-// ```
-// warn: (2) ["[TWIND_INVALID_CLASS] Unknown class "sb-show-main" found.", Object]
-// warn: (2) ["actual warning:", Object]
-// ```
+// This will silent the warning because we passed the `cancelable: true`
 window.addEventListener("warning", (event) => {
   // prevent default console.warn(`[<code>] <message>: <detail>`) logging
   event.preventDefault();
